@@ -1,0 +1,24 @@
+# macOS system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V8
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Original camera files (not needed for website)
+*.HEIC
+*.heic
+*.CR2
+*.cr2
+*.RAF
+*.raf
+
+# Editor / IDE
+.vscode/
+.idea/
+
+# Python server artifacts
+__pycache__/
+*.pyc
