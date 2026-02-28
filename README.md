@@ -124,3 +124,4 @@ Upload all files via FTP/cPanel File Manager into the `public_html` folder.
 | Charcoal | `#3D3530` | Headings, dark sections |
 | Display font | Cormorant Garamond | Headings |
 | Body font | Lato | All body text |
+# krystal-ann-photography
