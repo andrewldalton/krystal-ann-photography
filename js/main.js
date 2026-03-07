@@ -78,10 +78,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // ── Contact Form ─────────────────────────────
+  // ── Contact Form (Formspree) ──────────────────
   const contactForm = document.getElementById('contactForm');
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
       const btn = contactForm.querySelector('button[type="submit"]');
       const success = document.getElementById('formSuccess');
@@ -89,11 +89,26 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.textContent = 'Sending…';
       btn.disabled = true;
 
-      // Simulate submission (replace with real backend/formspree endpoint)
-      setTimeout(() => {
-        contactForm.style.display = 'none';
-        if (success) success.style.display = 'block';
-      }, 1200);
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+
+        if (response.ok) {
+          contactForm.style.display = 'none';
+          if (success) success.style.display = 'block';
+        } else {
+          btn.textContent = 'Send My Message';
+          btn.disabled = false;
+          alert('Something went wrong. Please try again or email directly.');
+        }
+      } catch {
+        btn.textContent = 'Send My Message';
+        btn.disabled = false;
+        alert('Something went wrong. Please try again or email directly.');
+      }
     });
   }
 

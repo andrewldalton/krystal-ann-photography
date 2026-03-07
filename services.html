@@ -10,6 +10,32 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "Photographer"],
+        "@id": "https://krystalannphotography.com/#business",
+        "name": "Krystal Ann Photography",
+        "url": "https://krystalannphotography.com",
+        "description": "Natural-light photography for families, sports, couples, and children's milestones in Omaha, Nebraska.",
+        "address": {"@type": "PostalAddress", "addressLocality": "Omaha", "addressRegion": "NE", "addressCountry": "US"},
+        "areaServed": [{"@type": "City", "name": "Omaha"}, {"@type": "City", "name": "Papillion"}, {"@type": "City", "name": "Bellevue"}, {"@type": "City", "name": "La Vista"}, {"@type": "City", "name": "Gretna"}],
+        "priceRange": "$$"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://krystalannphotography.com/"},
+          {"@type": "ListItem", "position": 2, "name": "Services", "item": "https://krystalannphotography.com/services.html"}
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -306,10 +332,25 @@
 </section>
 
 
+<!-- PRICING NOTE -->
+<section class="section">
+  <div class="container">
+    <div class="section-header text-center fade-in">
+      <span class="section-label">Investment</span>
+      <h2>Simple, transparent pricing</h2>
+      <p class="lead">Every session is a little different — reach out and I'll send you current rates and availability. No pressure, no obligation.</p>
+    </div>
+    <div class="text-center fade-in">
+      <a href="contact.html" class="btn btn-primary">Ask About Pricing</a>
+    </div>
+  </div>
+</section>
+
+
 <!-- CTA -->
 <section class="cta-banner">
   <div class="container fade-in">
-    <span class="section-label" style="color: rgba(255,255,255,0.7);">Ready When You Are</span>
+    <span class="cta-banner__script">ready when you are</span>
     <h2>Not sure which session is right for you?</h2>
     <p>Just reach out and tell me what you're thinking. We'll figure it out together.</p>
     <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
@@ -372,7 +413,7 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p class="footer__copy">&copy; 2025 Krystal Ann Photography. All rights reserved. Omaha, Nebraska.</p>
+      <p class="footer__copy">&copy; 2026 Krystal Ann Photography. All rights reserved. Omaha, Nebraska.</p>
     </div>
   </div>
 </footer>

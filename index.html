@@ -18,6 +18,43 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "Photographer"],
+        "@id": "https://krystalannphotography.com/#business",
+        "name": "Krystal Ann Photography",
+        "url": "https://krystalannphotography.com",
+        "description": "Natural-light photography for families, sports, couples, and children's milestones in Omaha, Nebraska.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Omaha",
+          "addressRegion": "NE",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          {"@type": "City", "name": "Omaha"},
+          {"@type": "City", "name": "Papillion"},
+          {"@type": "City", "name": "Bellevue"},
+          {"@type": "City", "name": "La Vista"},
+          {"@type": "City", "name": "Gretna"}
+        ],
+        "priceRange": "$$",
+        "image": "https://krystalannphotography.com/images/krystal.jpg"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://krystalannphotography.com/#website",
+        "name": "Krystal Ann Photography",
+        "url": "https://krystalannphotography.com"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -81,9 +118,9 @@
       <div class="hero__eyebrow">
         <span>Omaha, Nebraska</span>
       </div>
-      <h1>Every family has a<br><em>story worth keeping.</em></h1>
+      <h1>Omaha family photographer<br><em>for the moments that last.</em></h1>
       <p class="hero__tagline">
-        Warm, relaxed photography for families, milestones, and the moments in between — captured the way they actually feel.
+        Natural-light sessions for families, sports, couples &amp; milestones — delivered in 2–3 weeks, no stiff poses required.
       </p>
       <div class="hero__actions">
         <a href="contact.html" class="btn btn-primary">
@@ -92,6 +129,10 @@
         </a>
         <a href="portfolio.html" class="btn btn-outline">View the Portfolio</a>
       </div>
+      <p class="hero__availability">
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="var(--terracotta)" aria-hidden="true"><circle cx="4" cy="4" r="4"/></svg>
+        Now booking Spring &amp; Summer 2026 — spots fill fast
+      </p>
     </div>
   </div>
 
@@ -243,7 +284,7 @@
     </div>
 
     <div class="gallery-grid fade-in">
-      <div class="gallery-grid__item">
+      <div class="gallery-grid__item gallery-grid__item--featured">
         <img src="images/family 1.JPG"
              alt="Family session by Krystal Ann Photography" loading="lazy" />
         <div class="gallery-grid__overlay"><span class="gallery-grid__label">Family</span></div>
@@ -319,45 +360,36 @@
     </div>
 
     <div class="testimonial-grid">
-      <div class="testimonial-card fade-in">
-        <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote class="testimonial-card__quote">
-          "Krystal, you are amazing! My kids were running wild and you just went with it — and somehow you captured the most beautiful, genuine moments. I cried when I opened the gallery. Thank you so much."
+      <div class="testimonial-pull fade-in">
+        <span class="testimonial-pull__mark" aria-hidden="true">"</span>
+        <blockquote class="testimonial-pull__quote">
+          Krystal, you are amazing! My kids were running wild and you just went with it — and somehow you captured the most beautiful, genuine moments. I cried when I opened the gallery. Thank you so much.
         </blockquote>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar" aria-hidden="true">A</div>
-          <div>
-            <span class="testimonial-card__name">Angie</span>
-            <span class="testimonial-card__detail">Family Session · Elkhorn, NE</span>
-          </div>
+        <div class="testimonial-pull__attr">
+          <span class="testimonial-pull__name">— Angie</span>
+          <span class="testimonial-pull__detail">Family Session · Elkhorn, NE</span>
         </div>
       </div>
 
-      <div class="testimonial-card fade-in fade-in-delay-1">
-        <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote class="testimonial-card__quote">
-          "Krystal, I cannot say enough good things about you. I was so nervous and you made me feel completely at ease the whole time. The photos turned out better than I ever imagined — I'm obsessed!"
+      <div class="testimonial-pull fade-in fade-in-delay-1">
+        <span class="testimonial-pull__mark" aria-hidden="true">"</span>
+        <blockquote class="testimonial-pull__quote">
+          Krystal, I cannot say enough good things about you. I was so nervous and you made me feel completely at ease the whole time. The photos turned out better than I ever imagined — I'm obsessed!
         </blockquote>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar" aria-hidden="true">L</div>
-          <div>
-            <span class="testimonial-card__name">Lana</span>
-            <span class="testimonial-card__detail">Couples Session · Gretna, NE</span>
-          </div>
+        <div class="testimonial-pull__attr">
+          <span class="testimonial-pull__name">— Lana</span>
+          <span class="testimonial-pull__detail">Couples Session · Gretna, NE</span>
         </div>
       </div>
 
-      <div class="testimonial-card fade-in fade-in-delay-2">
-        <div class="testimonial-card__stars" aria-label="5 out of 5 stars">★★★★★</div>
-        <blockquote class="testimonial-card__quote">
-          "Krystal, you have such a gift! My little ones were not cooperating at all and you just laughed it off and kept going. Every single photo is perfect. We will be booking with you every year!"
+      <div class="testimonial-pull fade-in fade-in-delay-2">
+        <span class="testimonial-pull__mark" aria-hidden="true">"</span>
+        <blockquote class="testimonial-pull__quote">
+          Krystal, you have such a gift! My little ones were not cooperating at all and you just laughed it off and kept going. Every single photo is perfect. We will be booking with you every year!
         </blockquote>
-        <div class="testimonial-card__author">
-          <div class="testimonial-card__avatar" aria-hidden="true">A</div>
-          <div>
-            <span class="testimonial-card__name">Ami</span>
-            <span class="testimonial-card__detail">Children &amp; Milestones · Louisburg, KS</span>
-          </div>
+        <div class="testimonial-pull__attr">
+          <span class="testimonial-pull__name">— Ami</span>
+          <span class="testimonial-pull__detail">Children &amp; Milestones · Louisburg, KS</span>
         </div>
       </div>
     </div>
@@ -370,8 +402,8 @@
 ════════════════════════════════════════ -->
 <section class="cta-banner" aria-label="Call to action">
   <div class="container fade-in">
-    <span class="section-label" style="color: rgba(255,255,255,0.7);">Let's Make Something Beautiful</span>
-    <h2>Ready to capture your story?</h2>
+    <span class="cta-banner__script">Let's make something beautiful</span>
+    <h2>Your kids won't be this age next season.</h2>
     <p>Serving Omaha, Papillion, Bellevue, La Vista, and surrounding Nebraska communities.</p>
     <a href="contact.html" class="btn btn-outline-light">Book Your Session</a>
   </div>
@@ -441,7 +473,7 @@
     </div>
 
     <div class="footer__bottom">
-      <p class="footer__copy">&copy; 2025 Krystal Ann Photography. All rights reserved. Omaha, Nebraska.</p>
+      <p class="footer__copy">&copy; 2026 Krystal Ann Photography. All rights reserved. Omaha, Nebraska.</p>
       <p class="footer__copy">Site by Krystal Ann Photography</p>
     </div>
   </div>
