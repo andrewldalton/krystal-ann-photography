@@ -3,12 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Krystal | Krystal Ann Photography · Omaha, NE</title>
-  <meta name="description" content="Meet Krystal — an Omaha-based photographer who captures families, milestones, and real moments with warmth and honesty." />
+  <title>About Krystal Ann | Omaha Portrait Photographer · Natural Light</title>
+  <meta name="description" content="Meet Krystal — an Omaha-based natural light photographer with 5+ years capturing families, sports, couples &amp; milestones. Serving Omaha, Papillion, Bellevue &amp; La Vista, NE." />
+  <link rel="canonical" href="https://krystalannphotography.com/about.html" />
+  <meta property="og:title" content="About Krystal Ann | Omaha Portrait Photographer" />
+  <meta property="og:description" content="Meet Krystal — Omaha natural light photographer. Real sessions, real families." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://krystalannphotography.com/images/krystal.jpg" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&family=DM+Sans:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
   <link rel="stylesheet" href="css/style.css" />
 
   <!-- Structured Data -->
@@ -32,12 +38,22 @@
           {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://krystalannphotography.com/"},
           {"@type": "ListItem", "position": 2, "name": "About", "item": "https://krystalannphotography.com/about.html"}
         ]
+      },
+      {
+        "@type": "Person",
+        "name": "Krystal Ann",
+        "jobTitle": "Photographer",
+        "worksFor": {"@id": "https://krystalannphotography.com/#business"},
+        "address": {"@type": "PostalAddress", "addressLocality": "Omaha", "addressRegion": "NE"}
       }
     ]
   }
   </script>
 </head>
 <body>
+
+<a href="#main-content" class="skip-link">Skip to main content</a>
+<div class="scroll-progress" aria-hidden="true"></div>
 
 <!-- NAVIGATION -->
 <nav class="nav" role="navigation" aria-label="Main navigation">
@@ -58,7 +74,7 @@
       <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
       <li><a href="contact.html"   class="nav__link">Contact</a></li>
     </ul>
-    <a href="contact.html" class="btn btn-primary btn-sm nav__cta">Book a Session</a>
+    <a href="contact.html" class="btn btn-primary btn-sm nav__cta">Check My Availability</a>
     <button class="nav__toggle" aria-label="Toggle mobile menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -73,12 +89,12 @@
     <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
     <li><a href="contact.html"   class="nav__link">Contact</a></li>
   </ul>
-  <a href="contact.html" class="btn btn-primary">Book a Session</a>
+  <a href="contact.html" class="btn btn-primary">Check My Availability</a>
 </div>
 
 
 <!-- PAGE HERO -->
-<section class="page-hero">
+<section class="page-hero" id="main-content">
   <div class="container">
     <nav class="breadcrumb" aria-label="Breadcrumb">
       <a href="index.html">Home</a>
@@ -86,8 +102,8 @@
       <span>About</span>
     </nav>
     <span class="section-label">Meet Krystal</span>
-    <h1>A photographer who gets it.</h1>
-    <p class="lead">The nervous kids, the chaotic dog, the grandma who "doesn't like photos" — I've seen it all, and I love every second of it.</p>
+    <h1>The nervous kids.<br>The chaotic dog.<br>The grandma who &ldquo;hates photos.&rdquo;<br><em style="color:var(--terra)">I&rsquo;ve got this.</em></h1>
+    <p class="lead">Hi, I'm Krystal &mdash; an Omaha photographer, softball sideline regular, and the person who will absolutely get down in the mud to get the right shot.</p>
   </div>
 </section>
 
@@ -97,41 +113,53 @@
   <div class="container">
     <div class="grid-2">
 
-      <div class="fade-in">
-        <div style="border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-lg);">
+      <div class="reveal-left">
+        <div style="border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);">
           <img src="images/krystal.jpg"
-               alt="Krystal, Omaha photographer, smiling outdoors with camera"
-               loading="lazy" style="width:100%; height:auto; display:block;" />
+               alt="Krystal Ann, Omaha portrait photographer, smiling outdoors with camera"
+               loading="lazy" style="width:100%;height:auto;display:block;" />
         </div>
       </div>
 
-      <div class="fade-in fade-in-delay-1" style="padding: 2rem 0 2rem 2rem;">
+      <div class="reveal-right" style="padding:2rem 0 2rem 2rem;">
         <span class="section-label">My Story</span>
         <h2>From the sidelines to the studio</h2>
 
-        <p class="lead" style="margin-bottom: 1.5rem;">
-          Hi, I'm Krystal — an Omaha-based photographer, mom, and lover of golden hour light and candid belly laughs.
-        </p>
+        <div class="chapter-block">
+          <span class="chapter-num" aria-hidden="true">01</span>
+          <p class="lead" style="margin-bottom:1.25rem;">
+            Hi, I'm Krystal &mdash; an Omaha-based photographer, mom, and lover of golden hour light and candid belly laughs.
+          </p>
+          <p class="pull-quote">&ldquo;Something clicked. Not just the shutter. Something in me.&rdquo;</p>
+          <p>
+            Photography has always been something I loved, but life has a funny way of pulling you away from the things that matter. For a while, my camera sat on a shelf collecting dust. Then one spring evening, I was on the sidelines watching youth softball &mdash; my kid running the bases, the setting sun hitting just right, parents screaming their hearts out &mdash; and something clicked. Not just the shutter. Something in me.
+          </p>
+        </div>
 
-        <p>
-          Photography has always been something I loved, but life has a funny way of pulling you away from the things that matter. For a while, my camera sat on a shelf collecting dust. Then one spring evening, I was on the sidelines watching youth softball — my kid running the bases, the setting sun hitting just right, parents screaming their hearts out — and something clicked. Not just the shutter. Something in me.
-        </p>
+        <div class="chapter-block">
+          <span class="chapter-num" aria-hidden="true">02</span>
+          <p>
+            I picked up my camera and started shooting. Families in my neighborhood, friends at the park, relatives at holiday gatherings. Every session reminded me why I fell in love with this in the first place: it's not about getting a perfect pose. It's about freezing a moment that would otherwise disappear forever.
+          </p>
+          <p class="pull-quote">&ldquo;The best photos happen when people forget there&rsquo;s a camera.&rdquo;</p>
+        </div>
 
-        <p>
-          I picked up my camera and started shooting. I photographed families in my neighborhood, friends at the park, relatives at holiday gatherings. Every session reminded me why I fell in love with this in the first place: it's not about getting a perfect pose. It's about freezing a moment that would otherwise disappear forever.
-        </p>
-
-        <p>
-          Today, I specialize in family, sports, couples and engagement, and children's milestone photography throughout Omaha and the surrounding communities. My style is relaxed, natural, and rooted in genuine connection — because the best photos come from people who feel comfortable.
-        </p>
-
-        <p>
-          I have a soft spot for nervous clients, energetic toddlers, and dogs that refuse to sit still. I get it. I'm patient, flexible, and I will absolutely get down in the grass to get the right shot.
-        </p>
+        <div class="chapter-block">
+          <span class="chapter-num" aria-hidden="true">03</span>
+          <p>
+            Today, I specialize in family, sports, couples and engagement, and <a href="services.html#children" style="color:var(--terra);text-decoration:underline;text-underline-offset:3px;">children's milestone photography</a> throughout Omaha and the surrounding communities. My style is relaxed, natural, and rooted in genuine connection.
+          </p>
+          <p>
+            I have a soft spot for nervous clients, energetic toddlers, and dogs that refuse to sit still. I'm patient, flexible, and I will absolutely get down in the grass to get the right shot.
+          </p>
+        </div>
 
         <div class="about-preview__signature">Krystal Ann</div>
 
-        <a href="contact.html" class="btn btn-primary">Let's Work Together</a>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="contact.html" class="btn btn-primary">Let's Make Something Together</a>
+          <a href="services.html" class="btn btn-outline">See All Sessions</a>
+        </div>
       </div>
 
     </div>
@@ -139,26 +167,37 @@
 </section>
 
 
-<!-- VALUES / PHILOSOPHY -->
+<!-- PHILOSOPHY BLOCK -->
+<section class="philosophy-block">
+  <div class="container">
+    <blockquote>
+      &ldquo;I don&rsquo;t take photos for Instagram.
+      I take photos for the wall in your hallway
+      that your grandkids will look at someday.&rdquo;
+    </blockquote>
+    <cite>Krystal Ann</cite>
+  </div>
+</section>
+
+
+<!-- VALUES / APPROACH -->
 <section class="section section--alt">
   <div class="container">
-    <div class="grid-2" style="gap: 4rem; align-items: start;">
+    <div class="grid-2" style="gap:4rem;align-items:start;">
 
-      <div class="fade-in">
+      <div class="reveal-left">
         <span class="section-label">My Approach</span>
-        <h2>Photography should feel easy</h2>
-        <p class="lead">
-          I don't believe in stiff poses, forced smiles, or sessions that feel like a chore. Here's what you can expect when we work together.
-        </p>
+        <h2>Why Omaha Families Choose Krystal Ann</h2>
+        <p class="lead">I don't believe in stiff poses, forced smiles, or sessions that feel like a chore. Here's what you can expect.</p>
+        <div class="values-grid" style="margin-top:2rem;">
 
-        <div class="values-grid" style="margin-top: 2rem;">
           <div class="value-item">
             <div class="value-item__icon">
               <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
             <div>
               <h4>Zero pressure</h4>
-              <p>I guide you gently. No barking directions, no "look more natural" — I just create the conditions for great photos.</p>
+              <p>I guide you gently. No barking directions, no &ldquo;look more natural&rdquo; &mdash; I just create the conditions for great photos.</p>
             </div>
           </div>
 
@@ -178,7 +217,7 @@
             </div>
             <div>
               <h4>Location scouting</h4>
-              <p>Not sure where to shoot? I know Omaha's best outdoor spots — from Elmwood Park to Fontenelle Forest and beyond.</p>
+              <p>Not sure where to shoot? I know Omaha's best outdoor spots &mdash; from Elmwood Park to Fontenelle Forest and beyond.</p>
             </div>
           </div>
 
@@ -188,63 +227,73 @@
             </div>
             <div>
               <h4>Care in every edit</h4>
-              <p>Each photo is individually edited with warmth and intention. I don't mass-export — I make sure every image feels right.</p>
+              <p>Each photo is individually edited with warmth and intention. I don't mass-export &mdash; I make sure every image feels right.</p>
             </div>
           </div>
+
         </div>
       </div>
 
-      <!-- Fun facts sidebar -->
-      <div class="fade-in fade-in-delay-1">
-        <div style="
-          background-color: var(--white);
-          border-radius: var(--radius-lg);
-          padding: 2.5rem;
-          box-shadow: var(--shadow-md);
-        ">
+      <!-- Fun Facts sidebar — SVG icons -->
+      <div class="reveal-right">
+        <div class="fun-facts-card">
           <span class="section-label">A Little More Krystal</span>
-          <h3 style="margin-bottom: 1.5rem;">A few things to know</h3>
+          <h3 style="margin-bottom:1.5rem;">A few things to know</h3>
+          <ul style="display:flex;flex-direction:column;gap:1.25rem;">
 
-          <ul style="display: flex; flex-direction: column; gap: 1.25rem;">
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.5rem; flex-shrink: 0;">📍</span>
+            <li style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="width:36px;height:36px;background:var(--terra-tint);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--terra);flex-shrink:0;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
               <div>
-                <strong style="display:block; font-size:0.9rem; margin-bottom:0.15rem;">Based in Omaha, NE</strong>
-                <span style="font-size:0.85rem; color:var(--charcoal-lt);">Serving the greater metro including Papillion, Bellevue, and La Vista.</span>
+                <strong style="display:block;font-size:0.9rem;margin-bottom:0.15rem;">Based in Omaha, NE</strong>
+                <span style="font-size:0.85rem;color:var(--dust);">Serving the greater metro including Papillion, Bellevue, and La Vista.</span>
               </div>
             </li>
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.5rem; flex-shrink: 0;">⚾</span>
+
+            <li style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="width:36px;height:36px;background:var(--terra-tint);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--terra);flex-shrink:0;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
               <div>
-                <strong style="display:block; font-size:0.9rem; margin-bottom:0.15rem;">Softball sideline regular</strong>
-                <span style="font-size:0.85rem; color:var(--charcoal-lt);">Youth sports photography is where my passion was reignited. Ask me about action shots.</span>
+                <strong style="display:block;font-size:0.9rem;margin-bottom:0.15rem;">Softball sideline regular</strong>
+                <span style="font-size:0.85rem;color:var(--dust);">Youth sports photography is where my passion was reignited. Ask me about action shots.</span>
               </div>
             </li>
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.5rem; flex-shrink: 0;">🌅</span>
+
+            <li style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="width:36px;height:36px;background:var(--terra-tint);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--terra);flex-shrink:0;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke-linecap="round"/></svg>
+              </div>
               <div>
-                <strong style="display:block; font-size:0.9rem; margin-bottom:0.15rem;">Golden hour devotee</strong>
-                <span style="font-size:0.85rem; color:var(--charcoal-lt);">That warm, magical light an hour before sunset? My absolute favorite. Plan accordingly.</span>
+                <strong style="display:block;font-size:0.9rem;margin-bottom:0.15rem;">Golden hour devotee</strong>
+                <span style="font-size:0.85rem;color:var(--dust);">That warm, magical light an hour before sunset? My absolute favorite. Plan accordingly.</span>
               </div>
             </li>
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.5rem; flex-shrink: 0;">🐾</span>
+
+            <li style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="width:36px;height:36px;background:var(--terra-tint);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--terra);flex-shrink:0;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+              </div>
               <div>
-                <strong style="display:block; font-size:0.9rem; margin-bottom:0.15rem;">Dog mom approved</strong>
-                <span style="font-size:0.85rem; color:var(--charcoal-lt);">Bring your fur babies. Seriously. Pets are welcome in family sessions or on their own.</span>
+                <strong style="display:block;font-size:0.9rem;margin-bottom:0.15rem;">Dog mom approved</strong>
+                <span style="font-size:0.85rem;color:var(--dust);">Bring your fur babies. Seriously. Pets are welcome in family sessions.</span>
               </div>
             </li>
-            <li style="display: flex; gap: 1rem; align-items: flex-start;">
-              <span style="font-size: 1.5rem; flex-shrink: 0;">☕</span>
+
+            <li style="display:flex;gap:1rem;align-items:flex-start;">
+              <div style="width:36px;height:36px;background:var(--terra-tint);border-radius:var(--radius-sm);display:flex;align-items:center;justify-content:center;color:var(--terra);flex-shrink:0;">
+                <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+              </div>
               <div>
-                <strong style="display:block; font-size:0.9rem; margin-bottom:0.15rem;">Fueled by coffee</strong>
-                <span style="font-size:0.85rem; color:var(--charcoal-lt);">Early morning sessions are a yes as long as there's a good latte involved.</span>
+                <strong style="display:block;font-size:0.9rem;margin-bottom:0.15rem;">Fueled by coffee</strong>
+                <span style="font-size:0.85rem;color:var(--dust);">Early morning sessions are a yes as long as there's a good latte involved.</span>
               </div>
             </li>
+
           </ul>
-
-          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--cream-dark);">
-            <a href="contact.html" class="btn btn-primary" style="width:100%; justify-content:center;">Let's Book Your Session</a>
+          <div style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid var(--cream-deep);">
+            <a href="contact.html" class="btn btn-primary" style="width:100%;justify-content:center;">Let's Book Your Session</a>
           </div>
         </div>
       </div>
@@ -254,26 +303,22 @@
 </section>
 
 
-<!-- PHOTO OF WORK ENVIRONMENT -->
+<!-- BEHIND THE LENS -->
 <section class="section">
   <div class="container">
-    <div class="section-header text-center fade-in">
+    <div class="section-header text-center reveal-up">
       <span class="section-label">Behind the Lens</span>
       <h2>Some of my favorite sessions</h2>
     </div>
-
-    <div class="grid-3 fade-in">
-      <div style="border-radius:var(--radius-md); overflow:hidden; aspect-ratio:1; box-shadow:var(--shadow-sm);">
-        <img src="images/family 2.jpeg"
-             alt="Family session by Krystal Ann Photography" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+    <div class="grid-3 reveal-scale">
+      <div style="border-radius:var(--radius-md);overflow:hidden;aspect-ratio:1;box-shadow:var(--shadow-sm);">
+        <img src="images/family 2.jpeg" alt="Omaha family outdoor portrait session, natural light photography by Krystal Ann" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
       </div>
-      <div style="border-radius:var(--radius-md); overflow:hidden; aspect-ratio:1; box-shadow:var(--shadow-sm);">
-        <img src="images/sports 2.jpeg"
-             alt="Sports session by Krystal Ann Photography" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+      <div style="border-radius:var(--radius-md);overflow:hidden;aspect-ratio:1;box-shadow:var(--shadow-sm);">
+        <img src="images/sports 2.jpeg" alt="Youth athlete sports portrait session, Omaha sports photographer Krystal Ann" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
       </div>
-      <div style="border-radius:var(--radius-md); overflow:hidden; aspect-ratio:1; box-shadow:var(--shadow-sm);">
-        <img src="images/couples 3.jpeg"
-             alt="Couples session by Krystal Ann Photography" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
+      <div style="border-radius:var(--radius-md);overflow:hidden;aspect-ratio:1;box-shadow:var(--shadow-sm);">
+        <img src="images/couples 3.jpeg" alt="Omaha engagement couples photography session at golden hour, Krystal Ann Photography" loading="lazy" style="width:100%;height:100%;object-fit:cover;" />
       </div>
     </div>
   </div>
@@ -282,13 +327,13 @@
 
 <!-- CTA -->
 <section class="cta-banner">
-  <div class="container fade-in">
-    <span class="section-label" style="color: rgba(255,255,255,0.7);">I'd Love to Meet You</span>
+  <div class="container reveal-up">
+    <span class="section-label" style="color:rgba(255,255,255,0.7);">I'd Love to Meet You</span>
     <h2>Let's create something you'll love</h2>
-    <p>Reach out anytime — I respond within 24–48 hours and would love to hear about your session idea.</p>
-    <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+    <p>Reach out anytime &mdash; I respond within 24 hours and would love to hear about your session idea.</p>
+    <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
       <a href="contact.html" class="btn btn-outline-light">Get in Touch</a>
-      <a href="portfolio.html" class="btn" style="background:rgba(255,255,255,0.15); color:var(--white); border-color:transparent;">View Portfolio</a>
+      <a href="portfolio.html" class="btn" style="background:rgba(255,255,255,0.15);color:var(--white);border-color:transparent;">View Portfolio</a>
     </div>
   </div>
 </section>
@@ -332,11 +377,11 @@
       <div>
         <p class="footer__title">Service Area</p>
         <ul class="footer__links" role="list">
-          <li><a href="#">Omaha, NE</a></li>
-          <li><a href="#">Papillion, NE</a></li>
-          <li><a href="#">Bellevue, NE</a></li>
-          <li><a href="#">La Vista, NE</a></li>
-          <li><a href="#">Surrounding Areas</a></li>
+          <li><a href="contact.html">Omaha, NE</a></li>
+          <li><a href="contact.html">Papillion, NE</a></li>
+          <li><a href="contact.html">Bellevue, NE</a></li>
+          <li><a href="contact.html">La Vista, NE</a></li>
+          <li><a href="contact.html">Surrounding Areas</a></li>
         </ul>
       </div>
     </div>

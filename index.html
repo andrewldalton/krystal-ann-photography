@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Krystal Ann Photography | Omaha Family & Portrait Photographer</title>
-  <meta name="description" content="Krystal Ann Photography captures real moments in Omaha, Nebraska. Book your family, sports, couples, or children &amp; milestones session today." />
+  <title>Omaha Family Photographer | Krystal Ann Photography</title>
+  <meta name="description" content="Natural-light family, sports, couples &amp; milestone sessions in Omaha, NE. No stiff poses — just real moments. Serving Papillion, Bellevue &amp; the greater metro. Book today." />
   <meta name="keywords" content="Omaha photographer, family photographer Omaha, sports photographer Omaha, couples photographer Omaha, children milestone photos Nebraska, Krystal Ann Photography" />
+  <link rel="canonical" href="https://krystalannphotography.com/index.html" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Krystal Ann Photography | Omaha, NE" />
-  <meta property="og:description" content="Real moments. Real families. Honest, heartfelt photography in Omaha, Nebraska." />
+  <meta property="og:title" content="Omaha Family Photographer | Krystal Ann Photography" />
+  <meta property="og:description" content="Natural-light family, sports, couples &amp; milestone sessions in Omaha, NE. No stiff poses — just real moments." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://krystalannphotography.com/" />
+  <meta property="og:image" content="https://krystalannphotography.com/images/family 1.JPG" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&family=DM+Sans:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Pinyon+Script&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -44,7 +48,10 @@
           {"@type": "City", "name": "Gretna"}
         ],
         "priceRange": "$$",
-        "image": "https://krystalannphotography.com/images/krystal.jpg"
+        "image": "https://krystalannphotography.com/images/krystal.jpg",
+        "sameAs": ["https://www.instagram.com/krystalannphoto"],
+        "founder": {"@type": "Person", "name": "Krystal Ann"},
+        "knowsAbout": ["Family Photography","Sports Photography","Engagement Photography","Children's Milestone Photography","Natural Light Photography"]
       },
       {
         "@type": "WebSite",
@@ -57,6 +64,13 @@
   </script>
 </head>
 <body>
+
+<!-- Skip Link -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress" aria-hidden="true"></div>
+
 
 <!-- ═══════════════════════════════════════
      NAVIGATION
@@ -81,7 +95,7 @@
       <li><a href="contact.html"   class="nav__link">Contact</a></li>
     </ul>
 
-    <a href="contact.html" class="btn btn-primary btn-sm nav__cta">Book a Session</a>
+    <a href="contact.html" class="btn btn-primary btn-sm nav__cta">Check My Availability</a>
 
     <button class="nav__toggle" aria-label="Toggle mobile menu" aria-expanded="false">
       <span></span><span></span><span></span>
@@ -98,39 +112,38 @@
     <li><a href="portfolio.html" class="nav__link">Portfolio</a></li>
     <li><a href="contact.html"   class="nav__link">Contact</a></li>
   </ul>
-  <a href="contact.html" class="btn btn-primary">Book a Session</a>
+  <a href="contact.html" class="btn btn-primary">Check My Availability</a>
 </div>
 
 
 <!-- ═══════════════════════════════════════
-     HERO
+     HERO — SPLIT COMPOSITION
 ════════════════════════════════════════ -->
-<section class="hero" aria-label="Hero">
-  <div class="hero__bg">
+<section class="hero" aria-label="Hero" id="main-content">
+  <!-- Right photo (positioned absolute) -->
+  <div class="hero__photo">
     <img src="images/sports3.JPG"
-         alt="Sports photography session by Krystal Ann Photography"
-         loading="eager" />
+         alt="Sports photography session by Krystal Ann Photography, Omaha NE"
+         loading="eager"
+         fetchpriority="high" />
   </div>
-  <div class="hero__overlay" aria-hidden="true"></div>
 
-  <div class="container">
+  <!-- Left dark panel with text -->
+  <div class="hero__panel">
     <div class="hero__content">
       <div class="hero__eyebrow">
         <span>Omaha, Nebraska</span>
       </div>
-      <h1>Omaha family photographer<br><em>for the moments that last.</em></h1>
+      <h1>They grow so fast<br>it's almost unfair.<br><em>Let's make sure<br>you can see it.</em></h1>
       <p class="hero__tagline">
-        Natural-light sessions for families, sports, couples &amp; milestones — delivered in 2–3 weeks, no stiff poses required.
+        Real sessions for Omaha families, athletes, and couples — relaxed, unhurried, delivered in 2–3 weeks. No posing experience required.
       </p>
       <div class="hero__actions">
-        <a href="contact.html" class="btn btn-primary">
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6l4-4 4 4M12 2v13M3 18l9 4 9-4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          Book a Session
-        </a>
-        <a href="portfolio.html" class="btn btn-outline">View the Portfolio</a>
+        <a href="contact.html" class="btn btn-primary">Claim Your Spot This Season</a>
+        <a href="portfolio.html" class="btn btn-outline-light">See What a Session Looks Like</a>
       </div>
       <p class="hero__availability">
-        <svg width="8" height="8" viewBox="0 0 8 8" fill="var(--terracotta)" aria-hidden="true"><circle cx="4" cy="4" r="4"/></svg>
+        <span class="hero__availability-dot" aria-hidden="true"></span>
         Now booking Spring &amp; Summer 2026 — spots fill fast
       </p>
     </div>
@@ -144,29 +157,48 @@
 
 
 <!-- ═══════════════════════════════════════
-     INTRO STRIP
+     MARQUEE STRIP
 ════════════════════════════════════════ -->
-<div class="intro-strip" aria-hidden="true">
-  <div class="intro-strip__inner container">
-    <div class="intro-strip__item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s-8-4.5-8-11.8A8 8 0 0 1 12 2a8 8 0 0 1 8 8.2c0 7.3-8 11.8-8 11.8z" stroke-linecap="round"/><circle cx="12" cy="10" r="3"/></svg>
-      Omaha, Nebraska
-    </div>
-    <div class="intro-strip__sep"></div>
-    <div class="intro-strip__item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
-      Natural Light &amp; Lifestyle
-    </div>
-    <div class="intro-strip__sep"></div>
-    <div class="intro-strip__item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round"/></svg>
-      Families &amp; All Ages
-    </div>
-    <div class="intro-strip__sep"></div>
-    <div class="intro-strip__item">
-      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round"/></svg>
-      Real, Honest Moments
-    </div>
+<div class="marquee-strip" aria-hidden="true">
+  <div class="marquee-track">
+    <!-- First copy -->
+    <span class="marquee-item marquee-item--star">★★★★★</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">"Cried when I opened the gallery." — Angie</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">5+ Years · Omaha, NE</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item marquee-item--star">★★★★★</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">"Made me feel completely at ease." — Lana</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">100% Natural Light</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item marquee-item--star">★★★★★</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">"We will book every year." — Ami</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">Omaha's Family Photographer</span>
+    <span class="marquee-sep">|</span>
+    <!-- Second copy (identical - for seamless loop) -->
+    <span class="marquee-item marquee-item--star">★★★★★</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">"Cried when I opened the gallery." — Angie</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">5+ Years · Omaha, NE</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item marquee-item--star">★★★★★</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">"Made me feel completely at ease." — Lana</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">100% Natural Light</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item marquee-item--star">★★★★★</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">"We will book every year." — Ami</span>
+    <span class="marquee-sep">|</span>
+    <span class="marquee-item">Omaha's Family Photographer</span>
+    <span class="marquee-sep">|</span>
   </div>
 </div>
 
@@ -178,30 +210,38 @@
   <div class="container">
     <div class="grid-2">
 
-      <div class="about-preview__image fade-in">
-        <img src="images/krystal.jpg"
-             alt="Krystal Ann, Omaha photographer"
-             loading="lazy" />
-        <div class="about-preview__badge">
-          <span class="num">5+</span>
-          <span class="label">Years of<br>Storytelling</span>
-        </div>
+      <div class="about-preview__image reveal-left">
+        <img src="images/krystal.jpg" alt="Krystal Ann, Omaha portrait photographer, smiling outdoors with camera" loading="lazy" />
       </div>
 
-      <div class="about-preview__content fade-in fade-in-delay-1">
-        <span class="section-label">Meet Krystal Ann</span>
-        <h2>Photography rooted in real life</h2>
+      <div class="about-preview__content reveal-right">
+        <span class="section-label">Who's Behind the Camera</span>
+        <h2>I got back into photography on a softball sideline at golden hour — and I never stopped.</h2>
         <p class="lead">
-          Hey there — I'm Krystal, an Omaha-based photographer who found her way back to photography through the sidelines of a softball field and the living rooms of the families I love.
+          Hey, I'm Krystal — an Omaha photographer, softball sideline regular, and the person who will absolutely get down in the mud to get the right shot.
         </p>
         <p>
-          I specialize in family portraits, sports action, couples and engagement, and children's milestone sessions. My approach is simple: I want you to feel at ease, laugh a little, and forget a camera is pointed your way — because that's when the best photos happen.
+          I specialize in family portraits, sports action, couples and engagement, and children's milestone sessions. My whole approach is simple: feel at ease, laugh a little, forget the camera is there. That's when the best photos happen.
         </p>
-        <p>
-          Whether we're in a golden field at sunset or your own backyard, I'm here to create images that feel like <em>you</em>.
-        </p>
+        <div class="about-preview__stats">
+          <div>
+            <span class="about-preview__stat-num">5+</span>
+            <span class="about-preview__stat-label">Years</span>
+          </div>
+          <div>
+            <span class="about-preview__stat-num">4</span>
+            <span class="about-preview__stat-label">Session Types</span>
+          </div>
+          <div>
+            <span class="about-preview__stat-num">100%</span>
+            <span class="about-preview__stat-label">Natural Light</span>
+          </div>
+        </div>
         <div class="about-preview__signature">Krystal Ann</div>
-        <a href="about.html" class="btn btn-outline">Read My Story</a>
+        <div style="display:flex;gap:1rem;flex-wrap:wrap;">
+          <a href="about.html" class="btn btn-outline">Read My Story</a>
+          <a href="portfolio.html" class="btn" style="background:transparent;color:var(--terra);border:none;padding-left:0;text-decoration:underline;text-underline-offset:4px;">See My Work →</a>
+        </div>
       </div>
 
     </div>
@@ -210,22 +250,64 @@
 
 
 <!-- ═══════════════════════════════════════
+     GALLERY PREVIEW — BENTO GRID
+════════════════════════════════════════ -->
+<section class="section section--alt" id="gallery-preview">
+  <div class="container">
+    <div class="section-header text-center reveal-up">
+      <span class="section-label">Recent Work</span>
+      <h2>What a Krystal Ann session actually looks like</h2>
+    </div>
+
+    <div class="bento-grid reveal-scale">
+      <div class="bento-grid__cell bento-grid__cell--hero">
+        <img src="images/family 1.JPG" alt="Omaha family portrait session at golden hour by Krystal Ann Photography" loading="lazy" />
+        <div class="bento-grid__overlay"><span class="bento-grid__label">A Tuesday at the park</span></div>
+      </div>
+      <div class="bento-grid__cell bento-grid__cell--top-mid">
+        <img src="images/sports 1.jpeg" alt="Youth sports photographer Omaha — action shot by Krystal Ann Photography" loading="lazy" />
+        <div class="bento-grid__overlay"><span class="bento-grid__label">Game face</span></div>
+      </div>
+      <div class="bento-grid__cell bento-grid__cell--top-rt">
+        <img src="images/couples 2.jpeg" alt="Omaha engagement photographer — couples golden hour session by Krystal Ann Photography" loading="lazy" />
+        <div class="bento-grid__overlay"><span class="bento-grid__label">Just the two of you</span></div>
+      </div>
+      <div class="bento-grid__cell bento-grid__cell--btm-mid">
+        <img src="images/children1.jpeg" alt="Omaha children's milestone photographer — little girl on swing by Krystal Ann Photography" loading="lazy" style="object-position: center 18%;" />
+        <div class="bento-grid__overlay"><span class="bento-grid__label">Right now, this age</span></div>
+      </div>
+      <div class="bento-grid__cell bento-grid__cell--btm-rt">
+        <img src="images/family 2.jpeg" alt="Omaha family portrait outdoor session by Krystal Ann Photography" loading="lazy" />
+        <div class="bento-grid__overlay"><span class="bento-grid__label">Families</span></div>
+      </div>
+    </div>
+
+    <div class="text-center" style="margin-top:2rem;">
+      <a href="portfolio.html" style="font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--terra);display:inline-flex;align-items:center;gap:0.5rem;border-bottom:2px solid var(--terra);padding-bottom:0.2rem;transition:gap var(--transition);" onmouseover="this.style.gap='0.9rem'" onmouseout="this.style.gap='0.5rem'">
+        Browse the full portfolio →
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
      SERVICES OVERVIEW
 ════════════════════════════════════════ -->
-<section class="section section--alt" id="services-overview">
+<section class="section" id="services-overview">
   <div class="container">
-    <div class="section-header text-center fade-in">
+    <div class="section-header text-center reveal-up">
       <span class="section-label">What I Offer</span>
-      <h2>Sessions for every season of life</h2>
+      <h2>Whatever this chapter looks like, I want to photograph it.</h2>
       <p class="lead">From sideline action shots to first birthdays — I photograph the moments that mark where you've been.</p>
     </div>
 
     <div class="grid-2" style="max-width: 900px; margin: 0 auto;">
-      <div class="service-card fade-in fade-in-delay-1">
+      <div class="service-card reveal-up">
         <div class="service-card__icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round"/></svg>
         </div>
-        <h3>Family</h3>
+        <h3>The Family Session</h3>
         <p>Relaxed outdoor or lifestyle sessions that capture your family as they really are — together, laughing, and fully themselves.</p>
         <a href="services.html#family" class="service-card__link">
           Learn more
@@ -233,11 +315,11 @@
         </a>
       </div>
 
-      <div class="service-card fade-in fade-in-delay-2">
+      <div class="service-card reveal-up">
         <div class="service-card__icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l2.5 2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 3l2 2M19 3l-2 2M12 2v1" stroke-linecap="round"/></svg>
         </div>
-        <h3>Sports</h3>
+        <h3>The Athlete Session</h3>
         <p>Action-packed sessions on the field, court, or diamond. From youth softball to senior athlete portraits — I capture the drive and the joy.</p>
         <a href="services.html#sports" class="service-card__link">
           Learn more
@@ -245,11 +327,11 @@
         </a>
       </div>
 
-      <div class="service-card fade-in fade-in-delay-3">
+      <div class="service-card reveal-up">
         <div class="service-card__icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" stroke-linecap="round"/></svg>
         </div>
-        <h3>Couples &amp; Engagement</h3>
+        <h3>The Love Session</h3>
         <p>Just you two — somewhere you love, doing what feels natural. No stiff poses, just genuine connection photographed beautifully.</p>
         <a href="services.html#couples" class="service-card__link">
           Learn more
@@ -257,11 +339,11 @@
         </a>
       </div>
 
-      <div class="service-card fade-in fade-in-delay-4">
+      <div class="service-card reveal-up">
         <div class="service-card__icon">
           <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7" stroke-linecap="round"/></svg>
         </div>
-        <h3>Children &amp; Milestone Photos</h3>
+        <h3>The Little Moments Session</h3>
         <p>Kids move fast and I keep up. These sessions are kid-led, low-pressure, and designed to capture their personality at this exact age.</p>
         <a href="services.html#children" class="service-card__link">
           Learn more
@@ -274,75 +356,35 @@
 
 
 <!-- ═══════════════════════════════════════
-     GALLERY PREVIEW
+     HOW IT WORKS — DARK BACKGROUND
 ════════════════════════════════════════ -->
-<section class="section" id="gallery-preview">
+<section class="section section--dark" id="process">
   <div class="container">
-    <div class="section-header text-center fade-in">
-      <span class="section-label">Recent Work</span>
-      <h2>A peek inside the portfolio</h2>
-    </div>
-
-    <div class="gallery-grid fade-in">
-      <div class="gallery-grid__item gallery-grid__item--featured">
-        <img src="images/family 1.JPG"
-             alt="Family session by Krystal Ann Photography" loading="lazy" />
-        <div class="gallery-grid__overlay"><span class="gallery-grid__label">Family</span></div>
-      </div>
-      <div class="gallery-grid__item">
-        <img src="images/sports 1.jpeg"
-             alt="Sports session by Krystal Ann Photography" loading="lazy" />
-        <div class="gallery-grid__overlay"><span class="gallery-grid__label">Sports</span></div>
-      </div>
-      <div class="gallery-grid__item">
-        <img src="images/couples 2.jpeg"
-             alt="Couples session by Krystal Ann Photography" loading="lazy" />
-        <div class="gallery-grid__overlay"><span class="gallery-grid__label">Couples &amp; Engagement</span></div>
-      </div>
-      <div class="gallery-grid__item">
-        <img src="images/children1.jpeg"
-             alt="Children milestone session by Krystal Ann Photography" loading="lazy" style="object-position: center 18%;" />
-        <div class="gallery-grid__overlay"><span class="gallery-grid__label">Children &amp; Milestones</span></div>
-      </div>
-    </div>
-
-    <div class="text-center" style="margin-top: 2.5rem;">
-      <a href="portfolio.html" class="btn btn-outline">See Full Portfolio</a>
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════
-     HOW IT WORKS
-════════════════════════════════════════ -->
-<section class="section section--alt" id="process">
-  <div class="container">
-    <div class="section-header text-center fade-in">
-      <span class="section-label">The Process</span>
-      <h2>Booking is simple &amp; stress-free</h2>
+    <div class="section-header text-center reveal-up">
+      <span class="section-label">How It Works</span>
+      <h2>Here's how it works — start to finish</h2>
     </div>
 
     <div class="process-steps">
-      <div class="process-step fade-in">
+      <div class="process-step reveal-up">
         <div class="process-step__num">1</div>
         <h4>Reach Out</h4>
-        <p>Fill out the contact form or send me a message. Tell me what you're envisioning — no detail is too small.</p>
+        <p>Fill out the form or send a message. Tell me what you're thinking — even vague is totally fine.</p>
       </div>
-      <div class="process-step fade-in fade-in-delay-1">
+      <div class="process-step reveal-up">
         <div class="process-step__num">2</div>
         <h4>We Chat</h4>
-        <p>I'll reach back out to talk through your vision, pick a date, and find the perfect spot in Omaha or beyond.</p>
+        <p>I'll reach back out within 24 hours. We'll talk through your vision, pick a date, and find the perfect Omaha-area spot.</p>
       </div>
-      <div class="process-step fade-in fade-in-delay-2">
+      <div class="process-step reveal-up">
         <div class="process-step__num">3</div>
         <h4>Your Session</h4>
-        <p>Show up as you are — I handle the rest. We'll laugh, explore, and make images you'll actually love.</p>
+        <p>Show up as you are. I handle the rest — laughing, exploring, making images you'll actually want on your walls.</p>
       </div>
-      <div class="process-step fade-in fade-in-delay-3">
+      <div class="process-step reveal-up">
         <div class="process-step__num">4</div>
         <h4>Get Your Gallery</h4>
-        <p>Your edited photos arrive in an online gallery within 2–3 weeks — ready to download, print, and share.</p>
+        <p>Your edited gallery arrives within 2–3 weeks — ready to download, print, and frame.</p>
       </div>
     </div>
   </div>
@@ -354,13 +396,14 @@
 ════════════════════════════════════════ -->
 <section class="section testimonials" id="testimonials">
   <div class="container">
-    <div class="section-header text-center fade-in">
+    <div class="section-header text-center reveal-up">
       <span class="section-label">Kind Words</span>
-      <h2>What families are saying</h2>
+      <h2>What happened when they opened their galleries</h2>
     </div>
 
     <div class="testimonial-grid">
-      <div class="testimonial-pull fade-in">
+      <div class="testimonial-pull reveal-up">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
         <span class="testimonial-pull__mark" aria-hidden="true">"</span>
         <blockquote class="testimonial-pull__quote">
           Krystal, you are amazing! My kids were running wild and you just went with it — and somehow you captured the most beautiful, genuine moments. I cried when I opened the gallery. Thank you so much.
@@ -371,7 +414,8 @@
         </div>
       </div>
 
-      <div class="testimonial-pull fade-in fade-in-delay-1">
+      <div class="testimonial-pull reveal-up">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
         <span class="testimonial-pull__mark" aria-hidden="true">"</span>
         <blockquote class="testimonial-pull__quote">
           Krystal, I cannot say enough good things about you. I was so nervous and you made me feel completely at ease the whole time. The photos turned out better than I ever imagined — I'm obsessed!
@@ -382,7 +426,8 @@
         </div>
       </div>
 
-      <div class="testimonial-pull fade-in fade-in-delay-2">
+      <div class="testimonial-pull reveal-up">
+        <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
         <span class="testimonial-pull__mark" aria-hidden="true">"</span>
         <blockquote class="testimonial-pull__quote">
           Krystal, you have such a gift! My little ones were not cooperating at all and you just laughed it off and kept going. Every single photo is perfect. We will be booking with you every year!
@@ -398,14 +443,65 @@
 
 
 <!-- ═══════════════════════════════════════
+     INSTAGRAM STRIP
+════════════════════════════════════════ -->
+<section class="section" aria-label="Instagram portfolio preview">
+  <div class="container">
+    <div class="section-header text-center reveal-up" style="margin-bottom:1.5rem;">
+      <span class="section-label">As Seen on Instagram</span>
+      <h2>Follow along <span style="font-family:var(--font-script);font-weight:400;font-size:1.2em;color:var(--terra);">@krystalannphoto</span></h2>
+    </div>
+    <a href="https://instagram.com/krystalannphoto" target="_blank" rel="noopener" class="instagram-strip reveal-scale" aria-label="View Krystal Ann Photography on Instagram">
+      <div class="instagram-strip__cell">
+        <img src="images/family 3.jpeg" alt="Omaha family photography session" loading="lazy" />
+        <div class="instagram-strip__cell-overlay">
+          <svg class="instagram-strip__icon" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+      <div class="instagram-strip__cell">
+        <img src="images/sports3.JPG" alt="Omaha sports photography" loading="lazy" />
+        <div class="instagram-strip__cell-overlay">
+          <svg class="instagram-strip__icon" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+      <div class="instagram-strip__cell">
+        <img src="images/couples1.jpeg" alt="Omaha couples engagement session" loading="lazy" />
+        <div class="instagram-strip__cell-overlay">
+          <svg class="instagram-strip__icon" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+      <div class="instagram-strip__cell">
+        <img src="images/children2.jpeg" alt="Omaha children milestone photography" loading="lazy" />
+        <div class="instagram-strip__cell-overlay">
+          <svg class="instagram-strip__icon" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+      <div class="instagram-strip__cell">
+        <img src="images/family 2.jpeg" alt="Omaha family portrait session" loading="lazy" />
+        <div class="instagram-strip__cell-overlay">
+          <svg class="instagram-strip__icon" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+      <div class="instagram-strip__cell">
+        <img src="images/couples 3.jpeg" alt="Omaha engagement session" loading="lazy" />
+        <div class="instagram-strip__cell-overlay">
+          <svg class="instagram-strip__icon" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><line x1="16.5" y1="7.5" x2="16.5" y2="7.5" stroke-linecap="round" stroke-width="2.5"/></svg>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
      CTA BANNER
 ════════════════════════════════════════ -->
 <section class="cta-banner" aria-label="Call to action">
-  <div class="container fade-in">
-    <span class="cta-banner__script">Let's make something beautiful</span>
+  <div class="container reveal-up">
+    <span class="cta-banner__script">This season won't come back.</span>
     <h2>Your kids won't be this age next season.</h2>
     <p>Serving Omaha, Papillion, Bellevue, La Vista, and surrounding Nebraska communities.</p>
-    <a href="contact.html" class="btn btn-outline-light">Book Your Session</a>
+    <a href="contact.html" class="btn btn-outline-light">Let's Do This Before They Grow Up</a>
   </div>
 </section>
 
@@ -427,7 +523,7 @@
             <span class="logo__sub">Photography</span>
           </div>
         </a>
-        <p>Real moments. Real families. Honest, heartfelt photography for the people and places you love most — right here in Omaha, Nebraska.</p>
+        <p>Forget the pose. Just be yourselves.</p>
       </div>
 
       <div>
@@ -439,6 +535,7 @@
           <li><a href="portfolio.html">Portfolio</a></li>
           <li><a href="contact.html">Contact &amp; Booking</a></li>
         </ul>
+        <a href="contact.html" class="btn btn-primary btn-sm" style="margin-top:1.25rem;display:inline-block;">Start Here</a>
       </div>
 
       <div>
@@ -454,11 +551,11 @@
       <div>
         <p class="footer__title">Service Area</p>
         <ul class="footer__links" role="list">
-          <li><a href="#">Omaha, NE</a></li>
-          <li><a href="#">Papillion, NE</a></li>
-          <li><a href="#">Bellevue, NE</a></li>
-          <li><a href="#">La Vista, NE</a></li>
-          <li><a href="#">Surrounding Areas</a></li>
+          <li><a href="contact.html">Omaha, NE</a></li>
+          <li><a href="contact.html">Papillion, NE</a></li>
+          <li><a href="contact.html">Bellevue, NE</a></li>
+          <li><a href="contact.html">La Vista, NE</a></li>
+          <li><a href="contact.html">Surrounding Areas</a></li>
         </ul>
       </div>
 
