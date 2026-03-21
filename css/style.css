@@ -74,6 +74,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -82,6 +83,7 @@ body {
   color: var(--ink);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -361,6 +363,23 @@ p:last-child {
   -webkit-backdrop-filter: blur(12px);
   padding: 0.875rem 0;
   box-shadow: var(--shadow-sm);
+}
+
+/* Homepage hero: nav links are terra (orange) while nav is still transparent */
+.nav--hero:not(.scrolled) .nav__link {
+  color: var(--terra);
+}
+.nav--hero:not(.scrolled) .nav__link:hover {
+  color: var(--terra-dark);
+}
+.nav--hero:not(.scrolled) .nav__link.active {
+  color: var(--terra);
+}
+.nav--hero:not(.scrolled) .logo__name {
+  color: var(--cream);
+}
+.nav--hero:not(.scrolled) .nav__toggle span {
+  background: var(--terra);
 }
 
 .nav__inner {
@@ -2318,8 +2337,8 @@ p:last-child {
 
 /* Direction-aware reveal animations */
 .reveal-up    { opacity: 0; transform: translateY(40px); }
-.reveal-left  { opacity: 0; transform: translateX(-40px); }
-.reveal-right { opacity: 0; transform: translateX(40px); }
+.reveal-left  { opacity: 0; transform: translateX(-24px); }
+.reveal-right { opacity: 0; transform: translateX(24px); }
 .reveal-scale { opacity: 0; transform: scale(0.95); }
 
 .reveal-up.visible,
