@@ -382,6 +382,29 @@ p:last-child {
   background: var(--terra);
 }
 
+/* Photo-hero pages (services, portfolio): nav sits over a dark photo hero.
+   Add a soft top-gradient backdrop and switch text to cream so it's
+   readable regardless of what's in the photo. */
+.nav--photo:not(.scrolled) {
+  background: linear-gradient(to bottom, rgba(34,26,21,0.55) 0%, rgba(34,26,21,0.15) 70%, transparent 100%);
+}
+.nav--photo:not(.scrolled) .nav__link {
+  color: var(--cream);
+}
+.nav--photo:not(.scrolled) .nav__link:hover,
+.nav--photo:not(.scrolled) .nav__link.active {
+  color: var(--terra-muted);
+}
+.nav--photo:not(.scrolled) .nav__link::after {
+  background: var(--terra-muted);
+}
+.nav--photo:not(.scrolled) .logo__name {
+  color: var(--cream);
+}
+.nav--photo:not(.scrolled) .nav__toggle span {
+  background: var(--cream);
+}
+
 .nav__inner {
   display: flex;
   align-items: center;
