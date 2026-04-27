@@ -135,7 +135,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  color: var(--dust);
+  color: var(--ink-mid);
   margin-bottom: 1rem;
 }
 
@@ -145,7 +145,7 @@ p:last-child {
 
 .lead {
   font-size: clamp(1.05rem, 2vw, 1.2rem);
-  color: var(--dust);
+  color: var(--ink-mid);
   line-height: 1.8;
 }
 
@@ -1389,9 +1389,12 @@ p:last-child {
 }
 
 .testimonial-pull__name {
-  font-family: var(--font-script);
-  font-size: 1.8rem;
-  color: rgba(232,196,176,0.9);
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--terra-muted);
+  letter-spacing: 0.01em;
   line-height: 1.2;
 }
 
@@ -1647,7 +1650,7 @@ p:last-child {
 .faq-answer-inner {
   padding: 0 0 1.25rem;
   font-size: 0.95rem;
-  color: var(--dust);
+  color: var(--ink-mid);
   line-height: 1.75;
 }
 
@@ -1720,7 +1723,7 @@ p:last-child {
 
 .pricing-tier__list li {
   font-size: 0.88rem;
-  color: var(--dust);
+  color: var(--ink-mid);
   display: flex;
   gap: 0.5rem;
   align-items: flex-start;
