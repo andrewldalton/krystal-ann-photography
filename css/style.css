@@ -1548,11 +1548,11 @@ p:last-child {
   max-width: 560px;
 }
 
-/* Photo variant */
+/* Photo variant — taller so 3:2 photos don't crop subjects out */
 .page-hero--photo {
   padding: 0;
-  height: 50vh;
-  min-height: 380px;
+  height: 70vh;
+  min-height: 560px;
   display: flex;
   align-items: flex-end;
   padding-bottom: var(--space-6);
