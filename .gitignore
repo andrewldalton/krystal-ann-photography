@@ -22,3 +22,6 @@ Thumbs.db
 # Python server artifacts
 __pycache__/
 *.pyc
+
+# Wrangler local cache (do not commit — contains OAuth token)
+.wrangler/
